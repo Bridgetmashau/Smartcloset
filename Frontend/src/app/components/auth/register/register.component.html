@@ -1,0 +1,65 @@
+
+
+<div class="outBox min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 ">
+  
+    <div class="card card-body" >
+      <div class="header" >
+
+        <h3 style="color:black;font-size:40px;">  Create Account</h3>     
+      
+      
+      </div>
+
+    <div  style=" display: flex;justify-content: center;align-items: center;">
+       
+       
+    <div class="innerbox max-w-md w-full space-y-8" >
+      
+      <form class="mt-8 space-y-6 items-center justify-center" [formGroup]="registerForm" >
+
+        <input type="hidden" name="remember" value="true">
+        <div class="rounded-md shadow-sm -space-y-px">
+          <div>
+            <label for="exampleInputEmail1">Email address</label>
+            <input id="email-address" formControlName="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
+          </div>
+          
+          <div>
+              <br>
+              <label for="exampleInputEmail1">Password</label>
+            <input id="password" formControlName="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password">
+          </div>
+        </div>
+
+        <div>
+          <label for="exampleInputEmail1 "> Passoword</label>
+          <input id="ConfirmPassword" formControlName="ConfirmPassword" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Confirm Password">
+        </div>
+      
+  
+       
+  
+        <div>
+          <button (click)="set_registerForm()" type="button" class="button btn-primary btn-lg">Create Acount</button>
+          
+         
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+           
+    
+           <p>Already have account?  </p> <a routerLink="/login" class="font-medium text-brown-600 hover:text-green-500"> Login </a>
+          </div>
+        
+        </div>
+      </form>
+    </div>
+   
+
+   
+</div>
+</div> 
+  </div>
+
+  
+  
